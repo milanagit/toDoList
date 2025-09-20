@@ -22,9 +22,9 @@
             </form>
             <div class="todos-container">
                 <ul id="task-list">
-                    <li>CSSnippets</li>
+                    <!-- <li>CSSnippets</li>
                     <li>html</li>
-                    <li>css</li>
+                    <li>css</li> -->
                 </ul>
                 <img src="images/job_done.jpg" alt="empty" class="empty-img">
             </div>
