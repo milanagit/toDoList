@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do App<</title>
+    <title>To Do App</title>
 
 <!-- Font Awesome from https://cdnjs.com/libraries -->
 <!-- From https://fontawesome.com/icons/ you can import icons in the body code where needed -->
@@ -22,12 +22,15 @@
             </form>
             <div class="todos-container">
                 <ul id="task-list">
-                    <img src="images/job_done.jpg" alt="empty" class="empty-img">
+                    <li>CSSnippets</li>
+                    <li>html</li>
+                    <li>css</li>
                 </ul>
+                <img src="images/job_done.jpg" alt="empty" class="empty-img">
             </div>
         </div>
     </div>
 </body>
-<script src="style.js"></script>
+<script src="script.js"></script>
 
 </html>
