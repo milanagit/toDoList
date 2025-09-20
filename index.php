@@ -18,7 +18,7 @@
             <h1>To Do App</h1>
             <form action="" class="input-area">
                 <input type="text" id="task-input" placeholder="Add new Task...">
-                <button type="submit" id=""add-task-btn><i class="fa-solid fa-plus"></i></button>
+                <button type="submit" id="add-task-btn"><i class="fa-solid fa-plus"></i></button>
             </form>
             <div class="todos-container">
                 <ul id="task-list">

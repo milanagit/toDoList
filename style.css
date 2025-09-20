@@ -92,6 +92,11 @@ body {
     justify-content: center;
 }
 
+.todos-container img {
+    display: block;
+    width: 100%;
+}
+
 #task-list {
     width: 100%;
 }
