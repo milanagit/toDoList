@@ -92,11 +92,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .todos-container img {
     display: block;
-    width: 100%;
+    width: 50%;
 }
 
 #task-list {
