@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const li = document.createElement('li');
         li.innerHTML = `
-            <span class="material-symbols-outlined checkbox">check_box_outline_blank</span>
+            <span class="material-symbols-outlined checkbox">check_box_outline_blank</span> 
             <span class="task-text">${taskText}</span>
             <div class="task-buttons">
                 <button class="edit-btn"><i class="fa-solid fa-pen"></i></button>
@@ -33,15 +33,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const checkbox = li.querySelector('.checkbox');
         const editBtn = li.querySelector('.edit-btn');
         
-        if (li.querySelector('.checked')) {
+        if (li.querySelector('.checked'))/*(completed)*/ {
             li.classList.add('completed');
             editBtn.disabled = true;
             editBtn.style.opacity = '0.5';
             editBtn.style.pointerEvents = 'none';
         }
 
+        // if checkbox isn't checked, allow task edit
         checkbox.addEventListener('change', () => {
-            const isChecked = checkbox.querySelector('.checked');
+            console.log('change');
+            const isChecked = checkbox.classList.contains('checked');
             li.classList.toggle('completed', isChecked);
             editBtn.disabled = isChecked;
             editBtn.style.opacity = isChecked ? '0.5' : '1';
@@ -49,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
         editBtn.addEventListener('click', () => {
-            if (!checkbox.checked) {
+            if (!checkbox.classList.contains('checked')) {
                 taskInput.value = li.querySelector('.task-text').textContent;
                 li.remove();
                 toggleEmptyState();
