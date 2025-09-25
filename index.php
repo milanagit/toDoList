@@ -15,17 +15,20 @@
 <body>
     <div class="container">
         <div class="todo-app">
+
             <h1>To Do App</h1>
             <form action="" class="input-area">
-                <input type="text" id="task-input" placeholder="Add new Task...">
+                <input type="text" id="task-input" placeholder="Add a new Task...">
                 <button type="submit" id="add-task-btn"><i class="fa-solid fa-plus"></i></button>
             </form>
+
             <div class="todos-container">
                 <ul id="task-list">
                     
                 </ul>
-                <img src="images/job_done.jpg" alt="empty" class="empty-img">
+                <img src="images/job_done.jpg" alt="empty" class="empty-image">
             </div>
+
         </div>
     </div>
 </body>
